@@ -1,4 +1,4 @@
-package com.hemenway.thecardcatalog;
+package com.hemenway.thecardcatalog.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
