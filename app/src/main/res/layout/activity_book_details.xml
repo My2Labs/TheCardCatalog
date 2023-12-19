@@ -1,9 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.BookDetails">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.BookDetailedView">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="360dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="15dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Book Title"
+                    android:contentDescription="Book Title"/>
+
+                <EditText
+                    android:id="@+id/bookTitle"
+                    android:inputType="text"
+                    android:layout_width="200dp"
+                    android:layout_height="64dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Book Publisher"
+                    android:contentDescription="Book Publisher"/>
+
+                <EditText
+                    android:id="@+id/bookPublisher"
+                    android:inputType="text"
+                    android:layout_width="200dp"
+                    android:layout_height="64dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Book Format"
+                    android:contentDescription="Book Format"/>
+
+                <EditText
+                    android:id="@+id/bookFormat"
+                    android:inputType="text"
+                    android:layout_width="200dp"
+                    android:layout_height="64dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Book ISBN"
+                    android:text="Book ISBN"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/bookIsbn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
