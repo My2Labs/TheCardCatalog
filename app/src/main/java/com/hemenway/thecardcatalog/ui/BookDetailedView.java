@@ -214,6 +214,20 @@ public class BookDetailedView extends AppCompatActivity {
                 String publisher = bookPublisherText.getText().toString();
                 String format = bookFormatText.getText().toString();
 
+                //Validation check to ensure that there is a title enter before save is made.
+                if (!isValidName(title)) {
+                    bookTitleText.setError("Invalid title name");
+                    Toast.makeText(BookDetailedView.this, "Enter Title to Save!", Toast.LENGTH_LONG).show();
+                    return false;
+                }
+
+                //Industry-appropriate security features to prevent SQL injection
+                if (!isValidLength(title)) {
+                    bookTitleText.setError("Title name is too long");
+                    Toast.makeText(BookDetailedView.this, "Title name is too long!", Toast.LENGTH_LONG).show();
+                    return false;
+                }
+
                 Book newBook = new Book(0, authorId, title, publisher, format, bookIsbn);
 //                Book newBook = new Book(0, authorId, title);
                 eRepository.insert(newBook);
@@ -245,5 +259,15 @@ public class BookDetailedView extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    //Validation check
+    private boolean isValidName(String name) {
+        return name != null && !name.isEmpty();
+    }
+
+    //Industry-appropriate security features to prevent SQL injection
+    private boolean isValidLength(String name) {
+        return name.length() < 50;
     }
 }

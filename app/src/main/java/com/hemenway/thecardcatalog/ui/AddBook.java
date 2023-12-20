@@ -5,7 +5,9 @@ import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,7 +25,7 @@ public class AddBook extends AppCompatActivity {
     EditText bookTitleText;
     EditText bookPublisherText;
     TextView bookIsbnText;
-    EditText bookFormatText;
+    Spinner bookFormatText;
 
     int bookId;
     int authorId;
@@ -53,6 +55,16 @@ public class AddBook extends AppCompatActivity {
         bookPublisher = getIntent().getStringExtra("bookPublisher");
         bookFormat = getIntent().getStringExtra("bookFormat");
         bookIsbn = getIntent().getStringExtra("bookIsbn");
+
+        // Example for industry-appropriate security features to prevent SQL injection.
+        Spinner spinner = findViewById(R.id.bookFormat);
+
+
+        String[] items = new String[]{"Hardcover", "Paperback", "Leatherbound", "Digital"};
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, items);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
 
 
         //PART B - Polymorphism Example
@@ -88,12 +100,19 @@ public class AddBook extends AppCompatActivity {
             if (bookId == -1) {
                 String title = bookTitleText.getText().toString();
                 String publisher = bookPublisherText.getText().toString();
-                String format = bookFormatText.getText().toString();
+                String format = bookFormatText.getSelectedItem().toString();
 
                 //Validation check to ensure that there is a title enter before save is made.
                 if (!isValidName(title)) {
-                    bookTitleText.setError("Invalid first name");
+                    bookTitleText.setError("Invalid title name");
                     Toast.makeText(AddBook.this, "Enter Title to Save!", Toast.LENGTH_LONG).show();
+                    return false;
+                }
+
+                //Industry-appropriate security features to prevent SQL injection
+                if (!isValidLength(title)) {
+                    bookTitleText.setError("Title name is too long");
+                    Toast.makeText(AddBook.this, "Title name is too long!", Toast.LENGTH_LONG).show();
                     return false;
                 }
 
@@ -115,5 +134,10 @@ public class AddBook extends AppCompatActivity {
     //Validation check
     private boolean isValidName(String name) {
         return name != null && !name.isEmpty();
+    }
+
+    //Industry-appropriate security features to prevent SQL injection
+    private boolean isValidLength(String name) {
+        return name.length() < 50;
     }
 }

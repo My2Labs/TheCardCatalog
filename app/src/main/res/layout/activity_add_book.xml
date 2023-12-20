@@ -56,14 +56,12 @@
             </TableRow>
 
             <TableRow>
-
-                <EditText
+                <Spinner
                     android:id="@+id/bookFormat"
-                    android:layout_width="200dp"
-                    android:layout_height="64dp"
-                    android:inputType="text" />
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="40dp"/>
             </TableRow>
-
             <TableRow>
 
                 <TextView
@@ -71,7 +69,9 @@
                     android:layout_height="wrap_content"
                     android:contentDescription="Book Format"
                     android:text="Book Format"
-                    android:paddingLeft="10dp"/>
+                    android:paddingLeft="10dp"
+                    android:paddingTop="20dp"/>
+
             </TableRow>
 
             <TableRow>

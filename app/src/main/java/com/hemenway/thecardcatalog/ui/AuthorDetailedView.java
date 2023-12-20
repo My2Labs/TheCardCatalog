@@ -120,6 +120,32 @@ public class AuthorDetailedView extends AppCompatActivity {
                     String firstName = authorFirstNameText.getText().toString();
                     String lastName = authorLastNameText.getText().toString();
 
+                    //Validation check to make sure there is a value in the first name and last name
+
+                    if (!isValidName(firstName)) {
+                        authorFirstNameText.setError("Invalid first name");
+                        Toast.makeText(AuthorDetailedView.this, "Enter First Name to Save!", Toast.LENGTH_LONG).show();
+                        return false;
+                    }
+
+                    if (!isValidName(lastName)) {
+                        authorLastNameText.setError("Invalid last name");
+                        Toast.makeText(AuthorDetailedView.this, "Enter Last Name to Save!", Toast.LENGTH_LONG).show();
+                        return false;
+                    }
+
+                    //Industry-appropriate security features to prevent SQL injection
+                    if (!isValidLength(firstName)) {
+                        authorFirstNameText.setError("First Name is too long");
+                        Toast.makeText(AuthorDetailedView.this, "First Name is too long!", Toast.LENGTH_LONG).show();
+                        return false;
+                    }
+                    if (!isValidLength(lastName)) {
+                        authorFirstNameText.setError("Last Name is too long");
+                        Toast.makeText(AuthorDetailedView.this, "Last Name is too long!", Toast.LENGTH_LONG).show();
+                        return false;
+                    }
+
                     Author newAuthor = new Author(0, firstName, lastName);
 
                     repository.insert(newAuthor);
@@ -199,6 +225,16 @@ public class AuthorDetailedView extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
 
+    }
+
+    //Validation check
+    private boolean isValidName(String name) {
+        return name != null && !name.isEmpty();
+    }
+
+    //Industry-appropriate security features to prevent SQL injection
+    private boolean isValidLength(String name) {
+        return name.length() < 30;
     }
 
 

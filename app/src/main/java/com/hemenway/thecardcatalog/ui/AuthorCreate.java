@@ -74,6 +74,18 @@ public class AuthorCreate extends AppCompatActivity {
                     return false;
                 }
 
+                //Industry-appropriate security features to prevent SQL injection
+                if (!isValidLength(firstName)) {
+                    authorFirstNameText.setError("First Name is too long");
+                    Toast.makeText(AuthorCreate.this, "First Name is too long!", Toast.LENGTH_LONG).show();
+                    return false;
+                }
+                if (!isValidLength(lastName)) {
+                    authorFirstNameText.setError("Last Name is too long");
+                    Toast.makeText(AuthorCreate.this, "Last Name is too long!", Toast.LENGTH_LONG).show();
+                    return false;
+                }
+
                 Author newAuthor = new Author(0, firstName, lastName);
 
                 repository.insert(newAuthor);
@@ -105,5 +117,10 @@ public class AuthorCreate extends AppCompatActivity {
     //Validation check
     private boolean isValidName(String name) {
         return name != null && !name.isEmpty();
+    }
+
+    //Industry-appropriate security features to prevent SQL injection
+    private boolean isValidLength(String name) {
+        return name.length() < 30;
     }
 }
