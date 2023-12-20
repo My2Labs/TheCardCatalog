@@ -90,6 +90,13 @@ public class AddBook extends AppCompatActivity {
                 String publisher = bookPublisherText.getText().toString();
                 String format = bookFormatText.getText().toString();
 
+                //Validation check to ensure that there is a title enter before save is made.
+                if (!isValidName(title)) {
+                    bookTitleText.setError("Invalid first name");
+                    Toast.makeText(AddBook.this, "Enter Title to Save!", Toast.LENGTH_LONG).show();
+                    return false;
+                }
+
                 Book newBook = new Book(0, authorId, title, publisher, format, bookIsbn);
 //                Book newBook = new Book(0, authorId, title);
                 eRepository.insert(newBook);
@@ -103,5 +110,10 @@ public class AddBook extends AppCompatActivity {
 
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    //Validation check
+    private boolean isValidName(String name) {
+        return name != null && !name.isEmpty();
     }
 }

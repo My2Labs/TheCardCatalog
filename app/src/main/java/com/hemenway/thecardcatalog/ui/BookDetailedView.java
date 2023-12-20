@@ -175,7 +175,7 @@ public class BookDetailedView extends AppCompatActivity {
         document.finishPage(page);
 
         File downloadsDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
-        String fileName = "book_list.pdf";
+        String fileName = "book_details.pdf";
         File file = new File(downloadsDir, fileName);
         try {
             FileOutputStream fos = new FileOutputStream(file);
