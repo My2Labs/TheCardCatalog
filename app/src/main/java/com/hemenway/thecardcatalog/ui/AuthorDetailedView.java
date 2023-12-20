@@ -73,7 +73,7 @@ public class AuthorDetailedView extends AppCompatActivity {
 
         Button button = findViewById(R.id.enterBookDetails);
         button.setOnClickListener(view -> {
-            Intent intent = new Intent(AuthorDetailedView.this, BookDetailedView.class);
+            Intent intent = new Intent(AuthorDetailedView.this, AddBook.class);
             intent.putExtra("authorId", authorId);
             startActivity(intent);
         });

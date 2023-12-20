@@ -82,7 +82,7 @@ public class BookDetailedView extends AppCompatActivity {
         //PART B - Polymorphism Example
         if(bookIsbn == null) {
             Random random = new Random();
-            int randomInt = random.nextInt(10000);
+            int randomInt = random.nextInt(10000000);
             bookIsbn = String.valueOf(randomInt);
             BookNumber newIsbn = new BookNumber();
             newIsbn.addIsbn(bookIsbn);

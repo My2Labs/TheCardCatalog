@@ -7,50 +7,50 @@
     android:layout_height="match_parent"
     tools:context=".ui.AuthorDetailedView">
 
-    <LinearLayout
+    <TableLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="51dp"
         tools:layout_editor_absoluteY="0dp">
 
+        <TableRow>
 
+            <EditText
+                android:id="@+id/authorFirstName"
+                android:layout_width="320dp"
+                android:layout_height="60dp"
+                android:hint="Author First Name"
+                android:inputType="text" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/authorFirstNameText"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="10dp"
+                android:text="Author First Name" />
+        </TableRow>
+        <TableRow>
+            <EditText
+                android:id="@+id/authorLastName"
+                android:layout_width="320dp"
+                android:layout_height="60dp"
+                android:hint="Author Last Name"
+                android:inputType="text" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/authorLastNameText"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="10dp"
+                android:text="Author Last Name" />
+        </TableRow>
 
-        <EditText
-            android:id="@+id/authorFirstName"
-            android:layout_width="240dp"
-            android:layout_height="60dp"
-            android:hint="Author First Name"
-            android:inputType="text" />
-        <TextView
-            android:id="@+id/authorFirstNameText"
-            android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:paddingBottom="10dp"
-            android:paddingLeft="10dp"
-            android:text="Author First Name" />
-
-
-
-        <EditText
-            android:id="@+id/authorLastName"
-            android:layout_width="240dp"
-            android:layout_height="60dp"
-            android:hint="Author Last Name"
-            android:inputType="text" />
-        <TextView
-            android:id="@+id/authorLastNameText"
-            android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:paddingBottom="10dp"
-            android:paddingLeft="10dp"
-            android:text="Author Last Name" />
-
-
-
-
-
-
-    </LinearLayout>
+    </TableLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
