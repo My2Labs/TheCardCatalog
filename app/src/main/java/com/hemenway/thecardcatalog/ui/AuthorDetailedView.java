@@ -115,8 +115,6 @@ public class AuthorDetailedView extends AppCompatActivity {
             firstName = authorFirstNameText.getText().toString();
             lastName = authorLastNameText.getText().toString();
 
-
-
                 if (authorId == -1) {
 
                     String firstName = authorFirstNameText.getText().toString();
@@ -185,54 +183,6 @@ public class AuthorDetailedView extends AppCompatActivity {
             return true;
         }
 
-//        if (id == R.id.startAlert)
-//        {
-//            String dateFromScreen = vacationStartText.getText().toString();
-//            String myFormat = "MM/dd/yy";
-//            SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
-//            Date myDate = null;
-//            try {
-//                myDate = sdf.parse(dateFromScreen);
-//            } catch (ParseException e) {
-//                e.printStackTrace();
-//            }
-//            try{
-//                Long trigger = myDate.getTime();
-//                Intent intent = new Intent(VacationDetailedView.this, Receiver.class);
-//                intent.putExtra("key", name + " vacation is starting!");
-//                PendingIntent sender = PendingIntent.getBroadcast(VacationDetailedView.this, ++MainActivity.numAlert, intent, PendingIntent.FLAG_IMMUTABLE);
-//                AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
-//                alarmManager.set(AlarmManager.RTC_WAKEUP, trigger, sender);}
-//            catch (Exception e){
-//
-//            }
-//            return true;
-//        }
-
-//        if (id == R.id.endAlert) {
-//            String dateFromScreen = vacationStartText.getText().toString();
-//            String myFormat = "MM/dd/yy";
-//            SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
-//            Date myDate = null;
-//            try {
-//                myDate = sdf.parse(dateFromScreen);
-//            } catch (ParseException e) {
-//                e.printStackTrace();
-//            }
-//            try{
-//                Long trigger = myDate.getTime();
-//                Intent intent = new Intent(VacationDetailedView.this, Receiver.class);
-//                intent.putExtra("key", name + " vacation is ending.");
-//                PendingIntent sender = PendingIntent.getBroadcast(VacationDetailedView.this, ++MainActivity.numAlert, intent, PendingIntent.FLAG_IMMUTABLE);
-//                AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
-//                alarmManager.set(AlarmManager.RTC_WAKEUP, trigger, sender);}
-//            catch (Exception e){
-//
-//            }
-//            return true;
-//
-//        }
-
         if (id == R.id.refresh) {
             RecyclerView recyclerView = findViewById(R.id.bookRecyclerView);
             repository = new Repository(getApplication());
@@ -247,27 +197,6 @@ public class AuthorDetailedView extends AppCompatActivity {
 
             return true;
         }
-
-//        if (id == R.id.notify) {
-//            String dateFromScreen=vacationStartText.getText().toString();
-//            String myFormat = "MM/dd/yy";
-//            SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
-//            Date myDate = null;
-//            try {
-//                myDate = sdf.parse(dateFromScreen);
-//            } catch (ParseException e) {
-//                e.printStackTrace();
-//            }
-//            Long trigger=myDate.getTime();
-//            Intent intent = new Intent(VacationDetailedView.this, Receiver.class);
-//            intent.putExtra("key", name + "VACATION ALERT: D308 - Performance Assessment");
-//            PendingIntent sender = PendingIntent.getBroadcast(VacationDetailedView.this, ++MainActivity.numAlert, intent, PendingIntent.FLAG_IMMUTABLE);
-//            AlarmManager alarmManager=(AlarmManager)getSystemService(Context.ALARM_SERVICE);
-//            alarmManager.set(AlarmManager.RTC_WAKEUP, trigger, sender);
-//            return true;
-//
-//        }
-
         return super.onOptionsItemSelected(item);
 
     }

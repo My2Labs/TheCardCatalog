@@ -15,26 +15,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TheCardCatalog"
         tools:targetApi="31">
+        <activity
+            android:name=".ui.BookFair"
+            android:exported="false" />
+        <activity
+            android:name=".ui.AuthorCreate"
+            android:exported="false" />
+
         <receiver
             android:name=".ui.Receiver"
             android:enabled="true"
-            android:exported="true"></receiver>
+            android:exported="true" />
 
-        <activity
-            android:name=".ui.AuthorListItem"
-            android:exported="false" />
-        <activity
-            android:name=".ui.AuthorDetailsWithBooks"
-            android:exported="false" />
-        <activity
-            android:name=".ui.BookDetails"
-            android:exported="false" />
-        <activity
-            android:name=".ui.BookList"
-            android:exported="false" />
-        <activity
-            android:name=".ui.AuthorList"
-            android:exported="false" />
         <activity
             android:name=".ui.MainActivity"
             android:exported="true">
@@ -43,6 +35,27 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.AuthorList"
+            android:exported="false" />
+        <activity
+            android:name=".ui.BookDetailedView"
+            android:exported="false"
+            android:label="Book Details"
+            android:parentActivityName=".ui.AuthorDetailedView">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.AuthorDetailedView"
+            android:exported="false"
+            android:label="Author Details"
+            android:parentActivityName=".ui.AuthorList">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
         </activity>
 
         <meta-data

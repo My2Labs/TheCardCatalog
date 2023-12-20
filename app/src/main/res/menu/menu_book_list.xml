@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/bookSave"
+        android:title="Book Save"
+        android:icon="@android:drawable/ic_menu_save"
+        android:contentDescription="Save"
+
+        />
+
+    <item android:id="@+id/search"
+        android:title="Search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:contentDescription="Search"
+
+        />
+
+    <item android:id="@+id/notify"
+        android:title="Notify"
+        android:icon="@android:drawable/ic_notification_overlay"
+        android:contentDescription="Notify"
+
+        />
+
+    <item android:id="@+id/bookDelete"
+        android:title="Book Delete"
+        android:icon="@android:drawable/ic_delete"
+        android:contentDescription="Book Delete"
+
+        />
+</menu>
