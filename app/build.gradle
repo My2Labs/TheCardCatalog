@@ -40,4 +40,9 @@ dependencies {
     implementation "androidx.room:room-runtime:$rootProject.roomVersion"
     annotationProcessor "androidx.room:room-compiler:$rootProject.roomVersion"
     androidTestImplementation "androidx.room:room-testing:$rootProject.roomVersion"
+
+    implementation 'org.apache.poi:poi:4.1.2'
+    implementation 'org.apache.poi:poi-ooxml:4.1.2'
+    implementation 'androidx.core:core:1.12.0'
+
 }
