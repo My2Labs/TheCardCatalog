@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.BookDetailedView">
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableRow>
+                <EditText
+                    android:id="@+id/bookTitle"
+                    android:layout_width="320dp"
+                    android:layout_height="64dp"
+                    android:inputType="text" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Book Title"
+                    android:text="Book Title"
+                    android:paddingLeft="10dp"/>
+            </TableRow>
+            <TableRow>
+                <EditText
+                    android:id="@+id/bookPublisher"
+                    android:layout_width="320dp"
+                    android:layout_height="64dp"
+                    android:inputType="text" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Book Publisher"
+                    android:text="Book Publisher"
+                    android:paddingLeft="10dp"/>
+            </TableRow>
+            <TableRow>
+                <EditText
+                    android:id="@+id/bookFormat"
+                    android:layout_width="320dp"
+                    android:layout_height="64dp"
+                    android:inputType="text" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Book Format"
+                    android:text="Book Format"
+                    android:paddingLeft="10dp"/>
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Book ISBN"
+                    android:text="Book ISBN"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:paddingTop="50dp"
+                    android:paddingLeft="20dp"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/bookIsbn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textSize="16sp"
+                    android:paddingLeft="30dp"/>
+            </TableRow>
+
+        </TableLayout>
+        <Button
+            android:id="@+id/create_pdf"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Create PDF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

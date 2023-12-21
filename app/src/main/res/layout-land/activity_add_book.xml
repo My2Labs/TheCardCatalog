@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.BookDetailedView">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="-16dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableRow>
+
+                <EditText
+                    android:id="@+id/bookTitle"
+                    android:layout_width="320dp"
+                    android:layout_height="64dp"
+                    android:inputType="text" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Book Title"
+                    android:text="Book Title"
+                    android:paddingLeft="10dp"/>
+            </TableRow>
+
+            <TableRow>
+
+                <EditText
+                    android:id="@+id/bookPublisher"
+                    android:layout_width="200dp"
+                    android:layout_height="64dp"
+                    android:inputType="text" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Book Publisher"
+                    android:text="Book Publisher"
+                    android:paddingLeft="10dp"/>
+            </TableRow>
+
+            <TableRow>
+                <Spinner
+                    android:id="@+id/bookFormat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="40dp"/>
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Book Format"
+                    android:text="Book Format"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="20dp"/>
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Book ISBN"
+                    android:text="Book ISBN"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/bookIsbn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+            </TableRow>
+        </TableLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
