@@ -65,8 +65,8 @@
 
     <TextView
         android:id="@+id/bookTitle"
-        android:layout_width="731dp"
-        android:layout_height="68dp"
+        android:layout_width="524dp"
+        android:layout_height="71dp"
         android:layout_marginBottom="8dp"
         android:gravity="center"
         android:padding="16dp"
@@ -74,13 +74,14 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/bookRecyclerView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/authorFirstName" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/bookRecyclerView"
-        android:layout_width="735dp"
-        android:layout_height="191dp"
+        android:layout_width="733dp"
+        android:layout_height="163dp"
         android:layout_marginTop="8dp"
         android:padding="14dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -93,12 +94,14 @@
         android:id="@+id/enterBookDetails"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="16dp"
         android:text="Add Book"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bookRecyclerView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.499"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bookRecyclerView"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintStart_toEndOf="@+id/bookTitle"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

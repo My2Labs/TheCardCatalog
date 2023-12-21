@@ -10,8 +10,9 @@
 
     <TextView
         android:id="@+id/headingTextView2"
-        android:layout_width="734dp"
-        android:layout_height="57dp"
+        android:layout_width="557dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="172dp"
         android:gravity="center"
         android:padding="16dp"
         android:text="Click on an author to view books associated or to edit or delete."
@@ -19,15 +20,14 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/bookRecyclerView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.1" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/bookRecyclerView"
-        android:layout_width="731dp"
-        android:layout_height="257dp"
+        android:layout_width="734dp"
+        android:layout_height="217dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/headingTextView2" />
@@ -36,25 +36,26 @@
         android:id="@+id/enterBookDetails"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="7dp"
         android:text="Add Author"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintBottom_toTopOf="@+id/bookRecyclerView"
+        app:layout_constraintEnd_toStartOf="@+id/headingTextView2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bookRecyclerView"
-        app:layout_constraintVertical_bias="0.673" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/return_home"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginStart="294dp"
+        android:layout_marginEnd="295dp"
+        android:layout_marginBottom="51dp"
         android:text="Return Home"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.859"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/enterBookDetails"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/bookRecyclerView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

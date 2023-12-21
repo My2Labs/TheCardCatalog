@@ -11,7 +11,8 @@
     <ListView
         android:id="@+id/listview"
         android:layout_width="520dp"
-        android:layout_height="412dp" />
+        android:layout_height="412dp"
+        android:paddingLeft="30dp"/>
 
     <Button
         android:id="@+id/return_home"
