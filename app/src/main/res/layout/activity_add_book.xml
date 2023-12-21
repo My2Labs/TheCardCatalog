@@ -82,16 +82,20 @@
                     android:contentDescription="Book ISBN"
                     android:text="Book ISBN"
                     android:textSize="16sp"
-                    android:visibility="gone" />
+                     />
 
-                <TextView
+
+            </TableRow>
+
+            <TableRow>
+                <EditText
                     android:id="@+id/bookIsbn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="number"
+
                     android:textSize="16sp"
-                    android:visibility="gone" />
+                    />
             </TableRow>
         </TableLayout>
     </androidx.appcompat.widget.LinearLayoutCompat>

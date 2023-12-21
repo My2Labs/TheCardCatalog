@@ -42,7 +42,7 @@ import java.util.Random;
 public class BookDetailedView extends AppCompatActivity {
     EditText bookTitleText;
     EditText bookPublisherText;
-    TextView bookIsbnText;
+    EditText bookIsbnText;
     EditText bookFormatText;
 
     int bookId;
@@ -70,30 +70,12 @@ public class BookDetailedView extends AppCompatActivity {
         bookFormatText = findViewById(R.id.bookFormat);
         bookIsbnText = findViewById(R.id.bookIsbn);
 
-
         authorId = getIntent().getIntExtra("authorId", -1);
         bookId = getIntent().getIntExtra("bookId", -1);
         bookTitle = getIntent().getStringExtra("bookTitle");
         bookPublisher = getIntent().getStringExtra("bookPublisher");
         bookFormat = getIntent().getStringExtra("bookFormat");
         bookIsbn = getIntent().getStringExtra("bookIsbn");
-
-
-        //PART B - Polymorphism Example
-        if(bookIsbn == null) {
-            Random random = new Random();
-            int randomInt = random.nextInt(10000000);
-            bookIsbn = String.valueOf(randomInt);
-            BookNumber newIsbn = new BookNumber();
-            newIsbn.addIsbn(bookIsbn);
-        }
-        else {
-            BookNumber newIsbn = new BookNumber();
-            newIsbn.addIsbn(bookIsbn);
-        }
-
-
-
 
         List<Author> myAuthors = eRepository.getAllAuthors();
         for (Author v : myAuthors) {
@@ -213,6 +195,7 @@ public class BookDetailedView extends AppCompatActivity {
                 String title = bookTitleText.getText().toString();
                 String publisher = bookPublisherText.getText().toString();
                 String format = bookFormatText.getText().toString();
+                String isbn = bookIsbnText.getText().toString();
 
                 //Validation check to ensure that there is a title enter before save is made.
                 if (!isValidName(title)) {
@@ -228,8 +211,7 @@ public class BookDetailedView extends AppCompatActivity {
                     return false;
                 }
 
-                Book newBook = new Book(0, authorId, title, publisher, format, bookIsbn);
-//                Book newBook = new Book(0, authorId, title);
+                Book newBook = new Book(0, authorId, title, publisher, format, isbn);
                 eRepository.insert(newBook);
                 Toast.makeText(BookDetailedView.this, "Book Added", Toast.LENGTH_LONG).show();
                 this.finish();
@@ -238,9 +220,9 @@ public class BookDetailedView extends AppCompatActivity {
                 String title = bookTitleText.getText().toString();
                 String publisher = bookPublisherText.getText().toString();
                 String format = bookFormatText.getText().toString();
+                String isbn = bookIsbnText.getText().toString();
 
-                Book newBook = new Book(bookId, authorId, title, publisher, format, bookIsbn);
-//                Book newBook = new Book(0, authorId, title);
+                Book newBook = new Book(bookId, authorId, title, publisher, format, isbn);
                 eRepository.update(newBook);
                 Toast.makeText(BookDetailedView.this, "Book Updated", Toast.LENGTH_LONG).show();
                 this.finish();

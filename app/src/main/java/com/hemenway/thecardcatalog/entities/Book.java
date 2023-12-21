@@ -33,6 +33,8 @@ public class Book extends Author {
         this.bookIsbn = bookIsbn;
     }
 
+
+
     @Ignore
     public Book(int bookId, int authorId, String bookTitle) {
         this.bookId = bookId;
@@ -65,12 +67,12 @@ public class Book extends Author {
 
     public String getBookIsbn() { return bookIsbn; }
 
-    public void setBookIsbn(String bookFormat) { this.bookIsbn = bookIsbn; }
+    public void setBookIsbn(String bookIsbn) { this.bookIsbn = bookIsbn; }
 
-    //PART B - Polymorphism Example
-    public String addIsbn(String bookIsbn) {
-        this.bookIsbn = bookIsbn;
+    //Polymorphism example
+    public String getIsbn() {
         return this.bookIsbn;
     }
+
 }
 

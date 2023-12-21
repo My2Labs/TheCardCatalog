@@ -28,15 +28,9 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.BookViewHolder
             super(itemView);
             bookListItem = itemView.findViewById(R.id.bookListItem);
 
-            BookNumber newIsbn = new BookNumber();
-            newIsbn.addIsbn(String.valueOf(bookListItem));
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-
-                    String myFormat = "ISDN";
-                    //PART B - Polymorphism Example
-                    BookNumber newIsbn = new BookNumber();
 
                     int position = getAdapterPosition();
                     final Book current = mBook.get(position);
@@ -48,7 +42,7 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.BookViewHolder
                     intent.putExtra("bookTitle", current.getBookTitle());
                     intent.putExtra("bookPublisher", current.getBookPublisher());
                     intent.putExtra("bookFormat", current.getBookFormat());
-                    intent.putExtra("bookIsbn", newIsbn.getBookIsbn());
+                    intent.putExtra("bookIsbn", current.getIsbn());
 
 
                     context.startActivity(intent);

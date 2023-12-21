@@ -66,19 +66,6 @@ public class AddBook extends AppCompatActivity {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
 
-
-        //PART B - Polymorphism Example
-        if(bookIsbn == null) {
-            Random random = new Random();
-            int randomInt = random.nextInt(10000);
-            bookIsbn = String.valueOf(randomInt);
-            BookNumber newIsbn = new BookNumber();
-            newIsbn.addIsbn(bookIsbn);
-        }
-        else {
-            BookNumber newIsbn = new BookNumber();
-            newIsbn.addIsbn(bookIsbn);
-        }
     }
 
     @Override
@@ -98,9 +85,11 @@ public class AddBook extends AppCompatActivity {
 
         if (id == R.id.bookSave) {
             if (bookId == -1) {
+
                 String title = bookTitleText.getText().toString();
                 String publisher = bookPublisherText.getText().toString();
                 String format = bookFormatText.getSelectedItem().toString();
+                String isbn = bookIsbnText.getText().toString();
 
                 //Validation check to ensure that there is a title enter before save is made.
                 if (!isValidName(title)) {
@@ -116,8 +105,9 @@ public class AddBook extends AppCompatActivity {
                     return false;
                 }
 
-                Book newBook = new Book(0, authorId, title, publisher, format, bookIsbn);
-//                Book newBook = new Book(0, authorId, title);
+                //Polymorphism example of creating the BookNumber, which is an extended class of Book
+                BookNumber newBook = new BookNumber(0, authorId, title, publisher, format, isbn);
+
                 eRepository.insert(newBook);
                 Toast.makeText(AddBook.this, "Book Added", Toast.LENGTH_LONG).show();
                 this.finish();
