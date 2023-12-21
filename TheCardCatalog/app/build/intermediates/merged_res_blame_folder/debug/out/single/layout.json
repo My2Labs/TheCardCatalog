@@ -1,0 +1,146 @@
+[
+    {
+        "merged": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-mergeDebugResources-47:\\layout\\content_author_list_item.xml",
+        "source": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-main-50:\\layout\\content_author_list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-mergeDebugResources-47:\\layout\\nav_header_author_list_item.xml",
+        "source": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-main-50:\\layout\\nav_header_author_list_item.xml"
+    },
+    {
+        "merged": "com.hemenway.thecardcatalog.app-mergeDebugResources-47:/layout/app_bar_author_list.xml",
+        "source": "com.hemenway.thecardcatalog.app-main-50:/layout/app_bar_author_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-mergeDebugResources-47:\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-main-50:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-mergeDebugResources-47:\\layout\\nav_header_book_details.xml",
+        "source": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-main-50:\\layout\\nav_header_book_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-mergeDebugResources-47:\\layout\\content_book_details.xml",
+        "source": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-main-50:\\layout\\content_book_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-mergeDebugResources-47:\\layout\\nav_header_author_list.xml",
+        "source": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-main-50:\\layout\\nav_header_author_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-mergeDebugResources-47:\\layout\\app_bar_author_list_item.xml",
+        "source": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-main-50:\\layout\\app_bar_author_list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-mergeDebugResources-47:\\layout\\content_main.xml",
+        "source": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-main-50:\\layout\\content_main.xml"
+    },
+    {
+        "merged": "com.hemenway.thecardcatalog.app-mergeDebugResources-47:/layout/fragment_author_list.xml",
+        "source": "com.hemenway.thecardcatalog.app-main-50:/layout/fragment_author_list.xml"
+    },
+    {
+        "merged": "com.hemenway.thecardcatalog.app-mergeDebugResources-47:/layout/nav_header_author_list.xml",
+        "source": "com.hemenway.thecardcatalog.app-main-50:/layout/nav_header_author_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-mergeDebugResources-47:\\layout\\app_bar_book_list_item.xml",
+        "source": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-main-50:\\layout\\app_bar_book_list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-mergeDebugResources-47:\\layout\\activity_author_list.xml",
+        "source": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-main-50:\\layout\\activity_author_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-mergeDebugResources-47:\\layout\\app_bar_book_details.xml",
+        "source": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-main-50:\\layout\\app_bar_book_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-mergeDebugResources-47:\\layout\\app_bar_main.xml",
+        "source": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-main-50:\\layout\\app_bar_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-mergeDebugResources-47:\\layout\\fragment_gallery.xml",
+        "source": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-main-50:\\layout\\fragment_gallery.xml"
+    },
+    {
+        "merged": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-mergeDebugResources-47:\\layout\\nav_header_book_list_item.xml",
+        "source": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-main-50:\\layout\\nav_header_book_list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-mergeDebugResources-47:\\layout\\nav_header_main.xml",
+        "source": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-main-50:\\layout\\nav_header_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-mergeDebugResources-47:\\layout\\activity_home.xml",
+        "source": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-main-50:\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-mergeDebugResources-47:\\layout\\fragment_slideshow.xml",
+        "source": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-main-50:\\layout\\fragment_slideshow.xml"
+    },
+    {
+        "merged": "com.hemenway.thecardcatalog.app-mergeDebugResources-47:/layout/activity_author_list.xml",
+        "source": "com.hemenway.thecardcatalog.app-main-50:/layout/activity_author_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-mergeDebugResources-47:\\layout\\content_author_details_with_books.xml",
+        "source": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-main-50:\\layout\\content_author_details_with_books.xml"
+    },
+    {
+        "merged": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-mergeDebugResources-47:\\layout\\activity_book_details.xml",
+        "source": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-main-50:\\layout\\activity_book_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-mergeDebugResources-47:\\layout\\content_book_list_item.xml",
+        "source": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-main-50:\\layout\\content_book_list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-mergeDebugResources-47:\\layout\\app_bar_author_list.xml",
+        "source": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-main-50:\\layout\\app_bar_author_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-mergeDebugResources-47:\\layout\\nav_header_author_details_with_books.xml",
+        "source": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-main-50:\\layout\\nav_header_author_details_with_books.xml"
+    },
+    {
+        "merged": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-mergeDebugResources-47:\\layout\\app_bar_author_details_with_books.xml",
+        "source": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-main-50:\\layout\\app_bar_author_details_with_books.xml"
+    },
+    {
+        "merged": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-mergeDebugResources-47:\\layout\\content_author_list.xml",
+        "source": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-main-50:\\layout\\content_author_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-mergeDebugResources-47:\\layout\\activity_book_list_item.xml",
+        "source": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-main-50:\\layout\\activity_book_list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-mergeDebugResources-47:\\layout\\fragment_author_list2.xml",
+        "source": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-main-50:\\layout\\fragment_author_list2.xml"
+    },
+    {
+        "merged": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-mergeDebugResources-47:\\layout\\activity_author_details_with_books.xml",
+        "source": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-main-50:\\layout\\activity_author_details_with_books.xml"
+    },
+    {
+        "merged": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-mergeDebugResources-47:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-main-50:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.hemenway.thecardcatalog.app-mergeDebugResources-47:/layout/content_author_list.xml",
+        "source": "com.hemenway.thecardcatalog.app-main-50:/layout/content_author_list.xml"
+    },
+    {
+        "merged": "com.hemenway.thecardcatalog.app-mergeDebugResources-47:/layout/fragment_author_list2.xml",
+        "source": "com.hemenway.thecardcatalog.app-main-50:/layout/fragment_author_list2.xml"
+    },
+    {
+        "merged": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-mergeDebugResources-47:\\layout\\fragment_author_list.xml",
+        "source": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-main-50:\\layout\\fragment_author_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-mergeDebugResources-47:\\layout\\activity_author_list_item.xml",
+        "source": "C:\\Users\\sharr\\.gradle\\daemon\\8.0\\com.hemenway.thecardcatalog.app-main-50:\\layout\\activity_author_list_item.xml"
+    }
+]

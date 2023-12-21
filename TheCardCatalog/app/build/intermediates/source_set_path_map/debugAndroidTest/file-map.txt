@@ -1,0 +1,6 @@
+com.hemenway.thecardcatalog.test.app-core-1.5.0-0 C:\Users\sharr\.gradle\caches\transforms-3\33646dc63368d7043606c06e64f3d1b0\transformed\core-1.5.0\res
+com.hemenway.thecardcatalog.test.app-annotation-experimental-1.3.0-1 C:\Users\sharr\.gradle\caches\transforms-3\565f1803cd8f9291da9de0e62830a9ff\transformed\annotation-experimental-1.3.0\res
+com.hemenway.thecardcatalog.test.app-androidTest-2 C:\Users\sharr\Projects\Capstone\d424-software-engineering-capstone\TheCardCatalog\app\build\generated\res\resValues\androidTest\debug
+com.hemenway.thecardcatalog.test.app-mergeDebugAndroidTestResources-3 C:\Users\sharr\Projects\Capstone\d424-software-engineering-capstone\TheCardCatalog\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.hemenway.thecardcatalog.test.app-mergeDebugAndroidTestResources-4 C:\Users\sharr\Projects\Capstone\d424-software-engineering-capstone\TheCardCatalog\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.hemenway.thecardcatalog.test.app-merged_res-5 C:\Users\sharr\Projects\Capstone\d424-software-engineering-capstone\TheCardCatalog\app\build\intermediates\merged_res\debugAndroidTest

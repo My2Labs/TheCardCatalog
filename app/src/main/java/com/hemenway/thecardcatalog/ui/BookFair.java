@@ -19,16 +19,16 @@ public class BookFair extends AppCompatActivity {
 
     //Search feature
     ListView listView;
-    String[] name = {"Nashville Book Fair \n\t\tNashville, TN \n\t\t01/27/2024",
-            "Atlanta Book Fair \n\t\tAtlanta, GA \n\t\t02/17/2024",
-            "Colorado Springs Book Fair \n\t\tColorado Springs, CO \n\t\t03/23/2024",
-            "Chicago Book Fair \n\t\tChicago, IL \n\t\t04/27/2024",
-            "D.C. Book Fair \n\t\tWashington, D.C. \n\t\t05/18/2024",
-            "Seattle Book Fair \n\t\tSeattle, WA \n\t\t06/15/2024",
-            "Salt Lake City Book Fair \n\t\tSalt Lake City, UT \n\t\t07/20/2024",
-            "Orlando Book Fair \n\t\tOrlando, FL \n\t\t08/17/2024",
-            "Kansas City Book Fair \n\t\tKansas City, KS \n\t\t09/14/2024",
-            "Louisville Book Fair \n\t\tLouisville, KY \n\t\t10/19/2024"};
+    String[] name = {"Albuquerque Comic Con \n\t\tAlbuquerque, NM \n\t\tJanuary 19-21, 2024",
+            "Sunshine State Book Festival \n\t\tGainesville, FL \n\t\tJanuary 26-27, 2024",
+            "AWP Conference & Bookfair \n\t\tKansas City, MO \n\t\tFebruary 7-10, 2024",
+            "Savannah Book Festival \n\t\tSavannah, GA \n\t\tFebruary 15-18, 2024",
+            "Children's Literature Festival \n\t\tRedlands, CA \n\t\tMarch 1-2, 2024",
+            "Dahlonega Literary Festival \n\t\tDahlonega, GA \n\t\tMarch 2, 2024",
+            "Southwest Florida Reading Festival \n\t\tFort Myers, FL \n\t\tMarch 2, 2024",
+            "Tucson Festival of Books \n\t\tTucson, AZL \n\t\tMarch 9-10",
+            "New Orleans Book Festival at Tulane University \n\t\tNew Orleans, LA \n\t\tMarch 14-16, 2024",
+            "Palm Beach Book Festival \n\t\tPalm Beach, FL \n\t\tMarch 15-16, 2024"};
 
     ArrayAdapter<String> arrayAdapter;
     //-----------
