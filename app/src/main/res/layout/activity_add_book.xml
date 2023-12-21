@@ -32,8 +32,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:contentDescription="Book Title"
-                    android:text="Book Title"
-                    android:paddingLeft="10dp"/>
+                    android:paddingLeft="10dp"
+                    android:text="Book Title" />
             </TableRow>
 
             <TableRow>
@@ -51,27 +51,41 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:contentDescription="Book Publisher"
-                    android:text="Book Publisher"
-                    android:paddingLeft="10dp"/>
+                    android:paddingLeft="10dp"
+                    android:text="Book Publisher" />
             </TableRow>
 
             <TableRow>
+
                 <Spinner
                     android:id="@+id/bookFormat"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingTop="40dp"/>
+                    android:paddingTop="40dp" />
             </TableRow>
+
             <TableRow>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:contentDescription="Book Format"
-                    android:text="Book Format"
                     android:paddingLeft="10dp"
-                    android:paddingTop="20dp"/>
+                    android:paddingTop="20dp"
+                    android:text="Book Format" />
 
+            </TableRow>
+
+
+            <TableRow>
+
+                <EditText
+                    android:id="@+id/bookIsbn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:paddingTop="30dp"
+                    android:textSize="16sp" />
             </TableRow>
 
             <TableRow>
@@ -80,22 +94,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:contentDescription="Book ISBN"
+                    android:paddingLeft="10dp"
                     android:text="Book ISBN"
-                    android:textSize="16sp"
-                     />
-
-
-            </TableRow>
-
-            <TableRow>
-                <EditText
-                    android:id="@+id/bookIsbn"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-
-                    android:textSize="16sp"
-                    />
+                    android:textSize="16sp" />
             </TableRow>
         </TableLayout>
     </androidx.appcompat.widget.LinearLayoutCompat>
