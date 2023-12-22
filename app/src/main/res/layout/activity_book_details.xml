@@ -15,7 +15,8 @@
                     android:id="@+id/bookTitle"
                     android:layout_width="320dp"
                     android:layout_height="64dp"
-                    android:inputType="text" />
+                    android:inputType="text"
+                    android:hint="Book Title"/>
             </TableRow>
             <TableRow>
                 <TextView
@@ -30,7 +31,8 @@
                     android:id="@+id/bookPublisher"
                     android:layout_width="320dp"
                     android:layout_height="64dp"
-                    android:inputType="text" />
+                    android:inputType="text"
+                    android:hint="Publisher"/>
             </TableRow>
             <TableRow>
                 <TextView
@@ -45,7 +47,8 @@
                     android:id="@+id/bookFormat"
                     android:layout_width="320dp"
                     android:layout_height="64dp"
-                    android:inputType="text" />
+                    android:inputType="text"
+                    android:hint="Format"/>
             </TableRow>
             <TableRow>
                 <TextView
@@ -68,14 +71,16 @@
                     android:paddingLeft="20dp"/>
             </TableRow>
             <TableRow>
+
                 <EditText
                     android:id="@+id/bookIsbn"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
                     android:ems="10"
+                    android:hint="ISBN"
                     android:inputType="number"
-                    android:textSize="16sp"
-                    android:paddingLeft="30dp"/>
+                    android:paddingLeft="30dp"
+                    android:textSize="16sp" />
             </TableRow>
 
         </TableLayout>

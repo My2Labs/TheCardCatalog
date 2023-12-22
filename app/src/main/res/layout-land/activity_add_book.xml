@@ -26,7 +26,8 @@
                         android:id="@+id/bookTitle"
                         android:layout_width="320dp"
                         android:layout_height="64dp"
-                        android:inputType="text" />
+                        android:inputType="text"
+                        android:hint="Book Title"/>
                 </TableRow>
 
                 <TableRow>
@@ -45,7 +46,8 @@
                         android:id="@+id/bookPublisher"
                         android:layout_width="200dp"
                         android:layout_height="64dp"
-                        android:inputType="text" />
+                        android:inputType="text"
+                        android:hint="Publisher"/>
                 </TableRow>
 
                 <TableRow>
@@ -63,7 +65,8 @@
                         android:id="@+id/bookFormat"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:paddingTop="40dp"/>
+                        android:paddingTop="40dp"
+                        android:hint="Format"/>
                 </TableRow>
                 <TableRow>
 
@@ -86,7 +89,9 @@
                         android:layout_height="wrap_content"
                         android:ems="10"
                         android:paddingTop="30dp"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                        android:inputType="number"
+                        android:hint="ISBN"/>
                 </TableRow>
 
                 <TableRow>

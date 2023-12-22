@@ -8,10 +8,11 @@
         android:id="@+id/authorListText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="Author List Item"
         android:textSize="18sp"
-        android:contentDescription="List Item"
+        android:contentDescription="Author List Item"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="Author List Item"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

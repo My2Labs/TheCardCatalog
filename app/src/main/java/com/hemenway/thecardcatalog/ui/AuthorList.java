@@ -58,14 +58,6 @@ public class AuthorList extends AppCompatActivity {
             }
         });
 
-        Button home = findViewById(R.id.return_home);
-        home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(AuthorList.this, MainActivity.class);
-                startActivity(intent);
-            }
-        });
 
         System.out.println(getIntent().getStringExtra("test"));
     }
@@ -89,6 +81,10 @@ public class AuthorList extends AppCompatActivity {
             link.setAuthors(repository.getAllAuthors());
 
             return true;
+        }
+        else if (id == R.id.return_home) {
+            Intent intent = new Intent(AuthorList.this, MainActivity.class);
+            startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
     }

@@ -19,13 +19,15 @@
                 android:id="@+id/bookTitle"
                 android:layout_width="320dp"
                 android:layout_height="64dp"
-                android:inputType="text" />
+                android:inputType="text"
+                android:hint="Book Title"/>
 
             <EditText
                 android:id="@+id/bookPublisher"
                 android:layout_width="320dp"
                 android:layout_height="64dp"
-                android:inputType="text" />
+                android:inputType="text"
+                android:hint="Book Publisher"/>
         </TableRow>
 
         <TableRow>
@@ -53,7 +55,8 @@
                 android:id="@+id/bookFormat"
                 android:layout_width="320dp"
                 android:layout_height="64dp"
-                android:inputType="text" />
+                android:inputType="text"
+                android:hint="Format"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -75,11 +78,12 @@
                 android:paddingLeft="10dp"
                 android:text="Book Format" />
 
-            <TextView
+            <EditText
                 android:id="@+id/bookIsbn"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:ems="10"
+                android:hint="ISBN"
                 android:inputType="number"
                 android:paddingLeft="30dp"
                 android:textSize="16sp" />
